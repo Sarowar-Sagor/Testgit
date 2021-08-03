@@ -1,0 +1,15 @@
+Proper divisor of a number is all the divisor of that number except the number itself...................
+To avoid precision error of sqrt() function we can use sqrt(n+1) where n=square number(1,4,9,16.........)
+
+If (x-y)%m==0 then x%m=y%m;
+*****************************************************#########################################################
+iota(ar+initial index,ar+final index,initial value)// ar[initial index]=initial value,ar[initial index+1]=initial value+1,.....ar[final index-1]
+...........................**********************************#######################################################
+string st;
+string to number->number=stoll(st,nullptr,base);[[it always convert the st to decimal.here base is the number system of the st]]
+number to string->st=to_string(number);
+int ar[n+5]
+to check sorting== is_sorted(ar,ar+n);
+****************************************************************************************************************
+this is the link for update array query---->https://www.geeksforgeeks.org/difference-array-range-update-query-o1/
+gcd(a,b)=gcd(a-b,b) where a>b......

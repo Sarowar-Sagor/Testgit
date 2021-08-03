@@ -1,0 +1,31 @@
+#include<stdio.h>
+struct Teacher
+{
+    char name[100];
+    int age;
+    char dept[100];
+    float salary;
+
+}ob[10];
+
+void main()
+{
+    FILE *fpin,*fpout;
+    int i,n;
+    scanf("%d",&n);
+    fpin=fopen("in.txt","r");
+    fpout=fopen("out.txt","w");
+
+    for(i=0;i<n;i++)
+    {
+        fscanf(fpin,"%d%s%f%s",&ob[i].age,ob[i].name,&ob[i].salary,ob[i].dept);
+    }
+     fprintf(fpout,"Name | Dept | Age | Salary \n");
+    for(i=0;i<n;i++)
+    {
+        fprintf(fpout,"\n%s\t%s   %d   %.3f\n",ob[i].name,ob[i].dept,ob[i].age,ob[i].salary);
+        fprintf(fpout,"............................................................\n");
+    }
+    fclose(fpin);
+    fclose(fpout);
+}

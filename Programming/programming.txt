@@ -1,0 +1,65 @@
+
+string st,str;
+int a;
+string st(200,'a');//st="aaaaaaaaaaaaaaaaaaaaa........aaaaaaaa";length=200;
+a=st.find(str);
+st.find(str) returns the index of the first occurance of the str string in the st string.
+if str is not present in the st string then it returns string::npos.
+to find the next occurance we have to code st.find(str,a+1);
+again for next occurance a=st.find(str,a+1) we have to code st.find(str,a+1) and sooo onnnn.....
+###################################################**************************************************
+a prime number can be written as (6n+1) or (6n-1) where n=1,2,3,4,5................... except 2 and 3. 
+#################################################*******************************************************
+Due to precision error, sometimes our program may say that log10(100)=1.9999999 instead of 2. In order to avoid such scenes, we add eps to it before flooring.
+eps=10^(-9)(0.000000001),so total digit in 100 is log10(100)+1+eps.
+################################################################**************************************************************************
+summation of all numbers less then n which are co-prime with n is=((phi(n)*n)/2)..
+***********************************###############################################################
+n=(((a+p-1)/p)*p) here n is divisible by p and n is the smallest number greater than or equal a......
+**********************************###################################################################### 
+string.replace(initial index,total numbers you want to replace,replaced value);
+string.erase(initial index,total number you want to erase);
+string.erase()//delete all the characters;
+string.erase(initial index)//delete all characters after the initial index along with the initial index;
+**************************************************************************
+// Direct XOR of all numbers from 1 to n 
+int computeXOR(int n) 
+{ 
+    if (n % 4 == 0) 
+        return n; 
+    if (n % 4 == 1) 
+        return 1; 
+    if (n % 4 == 2) 
+        return n + 1; 
+    else
+        return 0; 
+} 
+*******************************************************************************
+// Function to check if x is power of 2 
+bool isPowerOfTwo(int x) 
+{ 
+	if(x==0) return 0;
+	return (!(x & (x - 1))); 
+} 
+***************************************************************************
+ Number of leading zeroes: __builtin_clz(x) //(32 bit)
+ Number of trailing zeroes : __builtin_ctz(x)
+ Number of 1-bits: __builtin_popcount(x) 
+*************************************************************************************************
+To transform a string to uppercase or lowercase:
+string st;
+ transform(st.begin(),st.end(),st.begin(),::toupper);//Uppercase
+ transform(st.begin(),st.end(),st.begin(),::tolower);//Lowercase
+*********************************************************************************************************
+string st;
+int a;
+substr is used to copy substring from a string.
+st.substr(initial index,final index);
+st.substr(index)..(copy string from index to st.size());
+****************************************************************************************************************
+
+
+
+
+
+
